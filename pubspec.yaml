@@ -1,0 +1,99 @@
+name: imnagerncy
+description: Personal safety and emergency response mobile application for human trafficking prevention.
+publish_to: 'none'
+
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.10.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  provider: ^6.0.0
+  
+  # Maps & Geofencing
+  google_maps_flutter: ^2.5.0
+  geolocator: ^9.0.2
+  geofence_flutter: ^0.3.0
+  
+  # Location & GPS
+  location: ^5.0.1
+  
+  # Local Storage & Database
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.0
+  
+  # Networking
+  http: ^1.1.0
+  dio: ^5.3.0
+  
+  # Security & Encryption
+  flutter_secure_storage: ^9.0.0
+  encrypt: ^4.0.3
+  
+  # Camera & Photo
+  image_picker: ^1.0.4
+  camera: ^0.10.5
+  image: ^4.0.17
+  
+  # Firebase (for real-time DB & alerts)
+  firebase_core: ^2.23.0
+  firebase_database: ^10.3.0
+  firebase_messaging: ^14.6.0
+  firebase_storage: ^11.3.0
+  
+  # SMS & Notifications
+  telephony: ^0.2.0
+  flutter_local_notifications: ^16.2.0
+  
+  # Audio & Media
+  audio_session: ^0.1.16
+  just_audio: ^0.9.36
+  
+  # Permissions
+  permission_handler: ^11.4.4
+  
+  # Utilities
+  intl: ^0.19.0
+  get_it: ^7.6.0
+  uuid: ^4.0.0
+  
+  # UI Components
+  flutter_screenutil: ^5.9.0
+  lottie: ^2.4.0
+  
+  # Logging
+  logger: ^2.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  flutter_lints: ^3.0.0
+  
+  # Code Generation
+  build_runner: ^2.4.6
+  hive_generator: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - assets/sounds/
+  
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
